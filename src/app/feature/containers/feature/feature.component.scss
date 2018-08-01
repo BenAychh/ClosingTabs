@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top-bar {
+  flex: 0 1 60px;
+  height: 60px;
+  background-color: lightgray;
+}
+
+mat-drawer {
+  width: 300px;
+}

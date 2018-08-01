@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+.use-entire-vertical-space {
+  flex: 1;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.mat-tab-group {
+  height: 100%;
+}
+
+.mat-tab-body-wrapper {
+  height: 100%;
+}

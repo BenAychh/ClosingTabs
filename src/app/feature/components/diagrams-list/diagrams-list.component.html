@@ -1,0 +1,10 @@
+<mat-list>
+  <mat-list-item *ngFor="let diagram of diagramsList; trackBy: trackByFn">
+    <h3 matLine>
+      <span class="diagram-name" (click)="handleClick(diagram)">{{diagram.name}}</span>
+    </h3>
+    <p matLine>
+      {{diagram.description}}
+    </p>
+  </mat-list-item>
+</mat-list>

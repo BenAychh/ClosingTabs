@@ -1,0 +1,9 @@
+<mat-tab-group [selectedIndex]="selectedIndex$ | async" (selectedIndexChange)="handleTabChange($event)">
+  <mat-tab *ngFor="let tab of (tabs$ | async); trackBy: trackByFn">
+    <ng-template mat-tab-label>
+      {{getName(tab) | async}}
+      <mat-icon (click)="closeTab($event, tab.id)">close</mat-icon>
+    </ng-template>
+    <app-view-diagram [diagramId]="tab.id" *ngIf="tab.type === 'diagram'"></app-view-diagram>
+  </mat-tab>
+</mat-tab-group>
